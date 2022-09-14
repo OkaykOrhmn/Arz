@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.profile.ProfileFr">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/user_linear_profile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120cdp"
+            android:layout_marginLeft="@dimen/_20cdp"
+            android:layout_marginTop="@dimen/_15cdp"
+            android:layout_marginRight="@dimen/_20cdp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_80cdp"
+                android:layout_height="@dimen/_80cdp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="360dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/gradiant"
+
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/iran"
+                android:text="کیانوش رحمانزایی"
+                android:textSize="@dimen/_24cdp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/cost_relative_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_linear_profile"
+            android:layout_marginTop="@dimen/_15cdp"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_frame_1040" />
+
+            <TextView
+                android:id="@+id/a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_5cdp"
+                android:fontFamily="@font/iran"
+                android:text="موجودی فعلی"
+                android:textSize="@dimen/_18cdp" />
+
+            <TextView
+                android:id="@+id/cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/a"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/iran"
+                android:text="500000 ريال"
+                android:textSize="@dimen/_25cdp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_260cdp"
+                android:layout_height="@dimen/_60cdp"
+                android:layout_below="@id/cost"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_20cdp"
+                app:cardCornerRadius="@dimen/_5cdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/recend_button_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/bar"
+                            android:layout_width="@dimen/_30cdp"
+                            android:layout_height="@dimen/_30cdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_5cdp"
+                            android:src="@drawable/ic_bardasht" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/bar"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/iran"
+                            android:text="برداشت"
+                            android:textColor="@color/main2"
+                            android:textSize="@dimen/_12cdp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="5px"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_15cdp"
+                        android:layout_marginBottom="@dimen/_15cdp"
+                        android:background="@color/main2" />
+
+                    <RelativeLayout
+                        android:id="@+id/recive_button_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/var"
+                            android:layout_width="@dimen/_30cdp"
+                            android:layout_height="@dimen/_30cdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_5cdp"
+                            android:src="@drawable/ic_variz" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/var"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/iran"
+                            android:text="واریز"
+                            android:textColor="@color/main2"
+                            android:textSize="@dimen/_12cdp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cost_relative_profile"
+            >
+
+
+            <TextView
+                android:id="@+id/properties_text_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_20cdp"
+                android:fontFamily="@font/iran"
+                android:text="اطلاعات تراکنش ها"
+                android:textColor="@color/main2"
+                android:textSize="@dimen/_14cdp"
+                android:textStyle="bold" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/properties_list_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/properties_text_profile"
+                android:layout_marginLeft="@dimen/_20cdp"
+                android:layout_marginRight="@dimen/_20cdp"
+                android:nestedScrollingEnabled="false"
+                />
+
+            <TextView
+                android:id="@+id/settings_text_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/properties_list_profile"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_20cdp"
+                android:fontFamily="@font/iran"
+                android:text="تنظیمات اضافه"
+                android:textColor="@color/main2"
+                android:textSize="@dimen/_14cdp"
+                android:layout_marginTop="@dimen/_15cdp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/settings_list_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/settings_text_profile"
+                android:layout_marginLeft="@dimen/_20cdp"
+                android:layout_marginRight="@dimen/_20cdp"
+                android:nestedScrollingEnabled="false"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>

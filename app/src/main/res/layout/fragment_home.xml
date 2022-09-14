@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.home.HomeFr"
+    >
+
+    <ProgressBar
+        android:id="@+id/spinner_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/home_fr_all"
+        >
+
+        <LinearLayout
+            android:id="@+id/profile_linear_home"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40cdp"
+            android:layout_marginLeft="@dimen/_20cdp"
+            android:layout_marginTop="@dimen/_15cdp"
+            android:layout_marginRight="@dimen/_20cdp"
+            android:layout_marginBottom="@dimen/_15cdp"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageView
+                android:id="@+id/notification_home_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5cdp"
+                android:src="@drawable/ic_notification" />
+
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/_5cdp"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="سلام"
+                    android:layout_gravity="right"
+                    android:textSize="@dimen/_10cdp"
+                    android:fontFamily="@font/iran"
+                    />
+
+                <TextView
+                    android:id="@+id/profile_name_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="کیانوش رحمانزایی"
+                    android:fontFamily="@font/iran"
+                    android:textStyle="bold"
+                    android:layout_marginRight="@dimen/_5cdp"
+                    android:textSize="@dimen/_15cdp"
+                    />
+
+
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_40cdp"
+                android:layout_height="@dimen/_40cdp"
+                app:cardCornerRadius="350dp"
+                >
+
+                <ImageView
+                    android:id="@+id/profile_pic_home"
+                    android:layout_width="@dimen/_40cdp"
+                    android:layout_height="@dimen/_40cdp"
+                    android:src="@drawable/gradiant"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/profit_linear_home"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/profit_linear_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_15cdp"
+                    android:background="@drawable/ic_frame_1027"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        >
+
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/_100cdp"
+                            android:layout_height="@dimen/_40cdp"
+                            android:layout_centerInParent="true"
+
+                            android:background="@drawable/ic_frame_970">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="@dimen/_20cdp"
+                                android:fontFamily="@font/iran"
+                                android:text="15.5%"
+                                android:textSize="@dimen/_12cdp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+
+
+
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="موجودی حساب شما:"
+                                android:textSize="@dimen/_15cdp"
+                                android:layout_gravity="right"
+                                android:fontFamily="@font/iran"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="500000 ريال"
+                                android:textSize="@dimen/_25cdp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/iran"
+                                android:layout_gravity="center"
+                                />
+
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profit_linear_home"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_200cdp"
+                        android:src="@drawable/ic_baseline_wifi_off_24"
+                        android:id="@+id/wifi"
+                        android:visibility="invisible"
+                        />
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/all_the_home"
+
+
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/more_linear_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_15cdp"
+                            android:layout_marginRight="@dimen/_20cdp"
+                            android:layout_marginLeft="@dimen/_20cdp"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="بیشتر"
+                                android:fontFamily="@font/iran"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:textSize="@dimen/_12cdp"
+                                android:textColor="#5EDE99"
+                                android:id="@+id/more_pop_home"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="پرسود ترین ها"
+                                android:textSize="@dimen/_14cdp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/iran"
+                                />
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_pup_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/more_linear_home"
+
+                            android:layout_marginTop="@dimen/_10cdp">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/recycler_pup_home"
+                            android:orientation="vertical"
+                            >
+
+                            <LinearLayout
+                                android:id="@+id/all_linear_home"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_15cdp"
+                                android:layout_marginRight="@dimen/_20cdp"
+                                android:layout_marginLeft="@dimen/_20cdp"
+                                android:layout_below="@id/profit_linear_home"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="بیشتر"
+                                    android:fontFamily="@font/iran"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"
+                                    android:textSize="@dimen/_12cdp"
+                                    android:textColor="#5EDE99"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="رمز ارز ها"
+                                    android:textSize="@dimen/_14cdp"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/iran"
+                                    />
+
+                            </LinearLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="@dimen/_15cdp"
+                                >
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/recycler_all_home"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="@dimen/_20cdp"
+                                    android:layout_marginLeft="@dimen/_20cdp"
+                                    />
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

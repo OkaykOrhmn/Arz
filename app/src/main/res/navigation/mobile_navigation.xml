@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFr">
+
+    <fragment
+        android:id="@+id/homeFr"
+        android:name="com.rhmn.arz.fragment.home.HomeFr"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFr_to_coinInfoFr"
+            app:destination="@id/coinInfoFr" />
+    </fragment>
+    <fragment
+        android:id="@+id/marketFr"
+        android:name="com.rhmn.arz.fragment.market.MarketFr"
+        android:label="fragment_market"
+        tools:layout="@layout/fragment_market" >
+        <action
+            android:id="@+id/action_marketFr_to_favFr"
+            app:destination="@id/favFr" />
+        <action
+            android:id="@+id/action_marketFr_to_allFr"
+            app:destination="@id/allFr" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFr"
+        android:name="com.rhmn.arz.fragment.profile.ProfileFr"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/allFr"
+        android:name="com.rhmn.arz.fragment.market.AllFr"
+        android:label="fragment_all"
+        tools:layout="@layout/fragment_all" />
+    <fragment
+        android:id="@+id/favFr"
+        android:name="com.rhmn.arz.fragment.market.FavFr"
+        android:label="fragment_fav"
+        tools:layout="@layout/fragment_fav" />
+    <fragment
+        android:id="@+id/coinInfoFr"
+        android:name="com.rhmn.arz.fragment.home.CoinInfoFr"
+        android:label="fragment_coin_info"
+        tools:layout="@layout/fragment_coin_info" />
+</navigation>

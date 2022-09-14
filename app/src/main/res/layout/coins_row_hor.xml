@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_150cdp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/_15cdp"
+    android:layout_marginRight="@dimen/_15cdp"
+    app:cardCornerRadius="@dimen/_10cdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/main"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10cdp"
+            >
+
+
+            <ImageView
+                android:id="@+id/coin_row_image"
+                android:layout_width="@dimen/_32cdp"
+                android:layout_height="@dimen/_32cdp"
+                android:layout_centerHorizontal="true"
+ />
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10cdp"
+            android:layout_marginRight="@dimen/_10cdp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/symbol_row_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="BTC/USD"
+                android:fontFamily="@font/iran"
+                android:textSize="@dimen/_20cdp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/name_row_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="bitcoin"
+                android:textSize="@dimen/_15cdp"
+                android:layout_gravity="center"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/price_row_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_10cdp"
+            android:layout_marginTop="@dimen/_10cdp"
+            android:text="21407.8963559943567890" />
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

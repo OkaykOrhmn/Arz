@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.market.MarketFr">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_20cdp"
+        android:layout_marginLeft="@dimen/_20cdp"
+        android:layout_marginTop="@dimen/_15cdp"
+
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_20cdp"
+            android:layout_height="@dimen/_20cdp"
+            android:src="@drawable/ic_search"
+            android:layout_marginLeft="@dimen/_20cdp"
+            android:layout_gravity="center_vertical"
+            />
+
+        <EditText
+            android:id="@+id/search_edittxt_mar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_50cdp"
+            android:fontFamily="@font/iran"
+            android:textSize="@dimen/_15cdp"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_market"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14cdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="@dimen/_20cdp"
+        android:layout_marginRight="@dimen/_20cdp"
+        >
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="همه"
+            style="@style/tab_text"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="علاقه مندی ها"
+            style="@style/tab_text"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مارجین"
+            style="@style/tab_text"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="فیات"
+            style="@style/tab_text"
+            />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/frame_all_market"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/_20cdp"
+        android:layout_marginLeft="@dimen/_20cdp"
+        android:layout_marginTop="@dimen/_15cdp"
+        android:layout_marginBottom="@dimen/_15cdp"
+        />
+
+
+
+
+
+
+
+</LinearLayout>
